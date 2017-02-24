@@ -1,1 +1,139 @@
-{"sentences":[{"index":0,"tokens":[{"index":1,"word":"From","originalText":"From","characterOffsetBegin":0,"characterOffsetEnd":4,"pos":"IN","before":"","after":""},{"index":2,"word":":","originalText":":","characterOffsetBegin":4,"characterOffsetEnd":5,"pos":":","before":"","after":" "},{"index":3,"word":"min@stella.skku.ac.KRSubject:","originalText":"min@stella.skku.ac.KRSubject:","characterOffsetBegin":6,"characterOffsetEnd":35,"pos":"NN","before":" ","after":" "},{"index":4,"word":"-LRB-","originalText":"(","characterOffsetBegin":36,"characterOffsetEnd":37,"pos":"-LRB-","before":" ","after":""},{"index":5,"word":"none","originalText":"none","characterOffsetBegin":37,"characterOffsetEnd":41,"pos":"NN","before":"","after":""},{"index":6,"word":"-RRB-","originalText":")","characterOffsetBegin":41,"characterOffsetEnd":42,"pos":"-RRB-","before":"","after":""},{"index":7,"word":"ubject","originalText":"ubject","characterOffsetBegin":43,"characterOffsetEnd":49,"pos":"NN","before":"","after":""},{"index":8,"word":":","originalText":":","characterOffsetBegin":49,"characterOffsetEnd":50,"pos":":","before":"","after":" "},{"index":9,"word":"subscriveplease","originalText":"subscriveplease","characterOffsetBegin":51,"characterOffsetEnd":66,"pos":"NN","before":" ","after":" "},{"index":10,"word":"subscribe","originalText":"subscribe","characterOffsetBegin":67,"characterOffsetEnd":76,"pos":"VBP","before":" ","after":" "},{"index":11,"word":"me.e-mail","originalText":"me.e-mail","characterOffsetBegin":77,"characterOffsetEnd":86,"pos":"NN","before":" ","after":""},{"index":12,"word":":","originalText":":","characterOffsetBegin":86,"characterOffsetEnd":87,"pos":":","before":"","after":" "},{"index":13,"word":"min@stella.skku.ac.kr","originalText":"min@stella.skku.ac.kr","characterOffsetBegin":88,"characterOffsetEnd":109,"pos":"NN","before":" ","after":""}]}]}
+{
+  "sentences": [
+    {
+      "index": 0,
+      "tokens": [
+        {
+          "index": 1,
+          "word": "From",
+          "originalText": "From",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "IN",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": ":",
+          "originalText": ":",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 5,
+          "pos": ":",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "min@stella.skku.ac.KRSubject:",
+          "originalText": "min@stella.skku.ac.KRSubject:",
+          "characterOffsetBegin": 6,
+          "characterOffsetEnd": 35,
+          "pos": "NN",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "-LRB-",
+          "originalText": "(",
+          "characterOffsetBegin": 36,
+          "characterOffsetEnd": 37,
+          "pos": "-LRB-",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": "none",
+          "originalText": "none",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 41,
+          "pos": "NN",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": "-RRB-",
+          "originalText": ")",
+          "characterOffsetBegin": 41,
+          "characterOffsetEnd": 42,
+          "pos": "-RRB-",
+          "before": "",
+          "after": "\u0002"
+        },
+        {
+          "index": 7,
+          "word": "ubject",
+          "originalText": "ubject",
+          "characterOffsetBegin": 43,
+          "characterOffsetEnd": 49,
+          "pos": "NN",
+          "before": "\u0002",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": ":",
+          "originalText": ":",
+          "characterOffsetBegin": 49,
+          "characterOffsetEnd": 50,
+          "pos": ":",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "subscriveplease",
+          "originalText": "subscriveplease",
+          "characterOffsetBegin": 51,
+          "characterOffsetEnd": 66,
+          "pos": "NN",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "subscribe",
+          "originalText": "subscribe",
+          "characterOffsetBegin": 67,
+          "characterOffsetEnd": 76,
+          "pos": "VBP",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "me.e-mail",
+          "originalText": "me.e-mail",
+          "characterOffsetBegin": 77,
+          "characterOffsetEnd": 86,
+          "pos": "NN",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 12,
+          "word": ":",
+          "originalText": ":",
+          "characterOffsetBegin": 86,
+          "characterOffsetEnd": 87,
+          "pos": ":",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "min@stella.skku.ac.kr",
+          "originalText": "min@stella.skku.ac.kr",
+          "characterOffsetBegin": 88,
+          "characterOffsetEnd": 109,
+          "pos": "NN",
+          "before": " ",
+          "after": ""
+        }
+      ]
+    }
+  ]
+}
