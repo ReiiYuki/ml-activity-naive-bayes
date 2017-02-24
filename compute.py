@@ -40,13 +40,17 @@ def calculate_prob(counted_dicts,total_num_word) :
         for key in counted_dict :
             #Make it probability
             counted_dict[key] /= float(num_word)
+            counted_dict[key] +=1
     return counted_dicts
 
 if __name__ == '__main__':
+
+    #Count word from each data set
     sci_result = read_dict_from_dir("sci.electronics")
     comp_result = read_dict_from_dir("comp_result")
 
-    # result = calculate_prob([result[0],result[1])
-    #
-    # for key in result[0] :
-    #     print (result[0][key])
+    #sum total word from two data set
+    total_num_word = sci_result[1]+comp_result[1]
+
+    #calculate probability
+    prob_dicts = calculate_prob([sci_result,comp_result],total_num_word)
