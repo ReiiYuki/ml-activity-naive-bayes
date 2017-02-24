@@ -78,8 +78,8 @@ def where(inp,prob_dicts,total_num_word,num_word_lists) :
 if __name__ == '__main__':
 
     #Count word from each data set
-    sci_result = read_dict_from_dir("sci.electronics")
-    comp_result = read_dict_from_dir("comp.windows.x")
+    sci_result = read_dict_from_dir("json/sci.electronics")
+    comp_result = read_dict_from_dir("json/comp.windows.x")
 
     #sum total word from two data set
     total_num_word = sci_result[1]+comp_result[1]
