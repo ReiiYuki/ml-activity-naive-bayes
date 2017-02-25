@@ -88,9 +88,9 @@ if __name__ == '__main__':
     prob_dicts = calculate_prob([sci_result[0],comp_result[0]],total_num_word)
 
     #Sample input from 64830 in comp.windows.x
-    input = "Your entry need not do well under all, or in most tests.  In certain X    cases, a test is not important.  Entries that compete for the X    'strangest/most creative source layout' need not do as well as X   others in terms of their algorithm."
-    ans = where(input,prob_dicts,total_num_word,[sci_result[1],comp_result[1]])
+    input = "algorithm"
 
+    ans = where(input,prob_dicts,total_num_word,[sci_result[1],comp_result[1]])
     #Show answer
     if ans == 1 :
         print ("comp.windows.x")
