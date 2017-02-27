@@ -1,5 +1,4 @@
-import os,json
-
+import os,json,math,sys
 '''
     Count word from json files in directory
     dir = directory of json file
@@ -37,10 +36,11 @@ def calculate_prob(counted_dicts,total_num_word) :
     #Iterate on each counted word dictionary of each data set
     for counted_dict in counted_dicts :
         #Iterate on each word of each dictionary
-        for key in counted_dict :
+        for key in counted_dict[0] :
             #Make it probability
-            counted_dict[key] /= float(total_num_word)
-            counted_dict[key] +=1
+            counted_dict[0][key] +=1
+            counted_dict[0][key] /= (counted_dict[1]+float(total_num_word))
+            counted_dict[0][key] = math.log10(counted_dict[0][key])
     return counted_dicts
 
 '''
@@ -59,18 +59,20 @@ def where(inp,prob_dicts,total_num_word,num_word_lists) :
     #Iterate on dictionary of probability
     for i in range(0,len(prob_dicts)) :
         #Calculate probability of each data set
-        prob = num_word_lists[i]/float(total_num_word)
+        prob = math.log10((num_word_lists[i]+1)/(float(total_num_word)+num_word_lists[i]))
         #Iterate on each word in input
         for word in list_word :
             #Product probability to total
-            if word in prob_dicts[i] :
-                prob *= prob_dicts[i][word]
+            if word in prob_dicts[i][0] :
+                prob += prob_dicts[i][0][word]
+            else :
+                prob += math.log10(1/(float(total_num_word)+num_word_lists[i]))
         prob_values[i] = prob
     #Find the best answer by most probability
-    current_prob = 0
+    current_prob = -1*sys.float_info.max
     ans = -1
     for i in range(0,len(prob_values)) :
-        if prob_values[i] > current_prob :
+        if float(prob_values[i]) > current_prob :
             current_prob = prob_values[i]
             ans = i
     return ans
@@ -85,10 +87,10 @@ if __name__ == '__main__':
     total_num_word = sci_result[1]+comp_result[1]
 
     #calculate probability
-    prob_dicts = calculate_prob([sci_result[0],comp_result[0]],total_num_word)
+    prob_dicts = calculate_prob([sci_result,comp_result],total_num_word)
 
     #Sample input from 64830 in comp.windows.x
-    input = "algorithm"
+    input = "Wayne Schellekens"
 
     ans = where(input,prob_dicts,total_num_word,[sci_result[1],comp_result[1]])
     #Show answer
